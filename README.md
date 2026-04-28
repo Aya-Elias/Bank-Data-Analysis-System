@@ -1,37 +1,30 @@
-# Digilians Bank: End-to-End Database & Analytics System
+# 🏦 Digilians Bank: Integrated Database & Analytics System
 
 ## 📌 Project Overview
-This project showcases a complete lifecycle of a Banking Management System. It starts from designing a complex relational database (SQL Server) to building an interactive Business Intelligence dashboard (Power BI). The goal is to manage bank operations, track customer transactions, and provide actionable insights for decision-makers.
+This project presents a complete banking management and analytics solution. It covers everything from architectural design and relational modeling to complex data engineering and interactive business intelligence.
 
-## 🛠️ Tech Stack
-* **Database Engine:** SQL Server (T-SQL)
-* **Data Visualization:** Power BI
-* **Data Modeling:** Star Schema / Relational Modeling
-* **Tools:** SSMS (SQL Server Management Studio)
+## 📁 Repository Files & Descriptions
 
-## 📁 Key Components
-### 1. Database Design (ERD & Schema)
-* Designed a robust relational schema including 10+ tables (Branches, Customers, Accounts, Transactions, Loans, etc.).
-* Implemented complex relationships (One-to-Many and Many-to-Many) to ensure data integrity.
-* Visualized the data architecture through an **ERD (Entity Relationship Diagram)**.
+### 1. 🏗️ Database Architecture & Design
+* **`ERD.jpg`**: The Entity Relationship Diagram that visualizes the logical structure of the bank's data, including relationships between customers, accounts, branches, and transactions.
+* **`Schema.png`**: A detailed technical view of the database schema, showcasing table structures, data types, and primary/foreign key constraints.
 
-### 2. SQL Implementation
-* **DDL (Data Definition Language):** Scripts for creating tables with primary keys, foreign keys, and constraints.
-* **DML (Data Manipulation Language):** Advanced scripts to populate the database with realistic mock data using loops and logic.
-* **Complex Queries:** Developed views and procedures to answer business questions like customer churn risk, high-value transactions, and branch performance.
+### 2. 💻 SQL Development (T-SQL)
+* **`Database creation.sql`**: The core DDL script that builds the entire database environment. It defines 10+ relational tables with optimized constraints to ensure data integrity.
+* **`Insertion codes.sql`**: A sophisticated data engineering script that uses T-SQL loops and logic to seed the database with over 500+ realistic records, simulating a real-world banking history.
+* **`Question codes.sql`**: The analytical heart of the project. It contains:
+    * **Analytical Views**: Unified views for customer portfolios and branch performance.
+    * **Risk Logic**: Queries designed to detect suspicious transactions (e.g., transactions exceeding 80% of account balance or deviating significantly from the mean).
 
-### 3. Power BI Dashboard
-* Integrated SQL Server data into Power BI.
-* Created an interactive dashboard to monitor:
-    * Total Balance & Transaction Volume.
-    * Customer Segmentation by Credit Score.
-    * Branch performance and geographical distribution.
+### 3. 📊 Data Visualization
+* **`Dashboardd.pbix`**: An interactive Power BI dashboard connected directly to the SQL database. It tracks key metrics like liquidity, customer credit scores, and transaction volumes.
+* **`image_e031b6.png`**: A visual preview/screenshot of the Power BI dashboard for quick reference.
 
-## 🚀 How to Use
-1. Run the `Database creation.sql` script to set up the environment.
-2. Execute `Insertion codes.sql` to fill the database with data.
-3. Use `Question codes.sql` to explore the analytical queries.
-4. Open the `Dashboardd.pbix` file to view the visual insights.
+## 🛠️ Key Technical Skills Demonstrated
+* **Database Design:** Relational Modeling & Normalization.
+* **Advanced SQL:** Joins, Subqueries, Views, and T-SQL Scripting (Loops/Variables).
+* **Data Analytics:** Transaction monitoring and statistical flagging.
+* **Business Intelligence:** Building dynamic dashboards in Power BI.
 
 ---
-**Contact me on [LinkedIn](www.linkedin.com/in/aya-elias-abdelmaksoud) for any discussions regarding Data Science & Analytics!**
+**Feel free to explore the code! Connect with me on [LinkedIn](YOUR_LINKEDIN_URL_HERE) for any discussions.**
