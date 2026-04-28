@@ -1,34 +1,37 @@
-# 🏦 Digilians Bank: Full-Cycle Data Management & Financial Intelligence
+# 🏦 Digilians Bank: Full-Cycle Data Engineering & Predictive Analytics
 
 ## 📌 Project Overview
-This project is a comprehensive simulation of a banking data ecosystem. It demonstrates proficiency in **Database Design (ERD)**, **Complex Data Engineering (T-SQL)**, and **Business Intelligence (Power BI)**. The system manages everything from branch operations and employee roles to automated transaction monitoring and customer risk assessment.
+This project is an end-to-end simulation of a banking data ecosystem. It demonstrates a complete data pipeline: from **Database Design** and **Complex T-SQL Engineering** to **Exploratory Data Analysis (EDA)**, **Data Cleaning**, and **Predictive Modeling**.
 
-## 📁 Detailed File Breakdown
+## 📁 Repository Roadmap & File Descriptions
 
-### 1. 🏗️ Data Architecture & Design
-* **`ERD.jpg`**: A visual representation of the database's Entity Relationship Diagram, showing the 10+ core entities and their relational constraints.
-* **`Schema.png`**: The physical data model showcasing table structures, data types, and the relational mapping between accounts, customers, and branches.
+### 1. 🏗️ Database Architecture & Design
+* **`ERD.jpg` & `Schema.png`**: Visual technical documentation of the relational database structure, showcasing tables, constraints, and entity relationships.
 
-### 2. 💻 Database Engineering (SQL Server)
-* **`Database creation.sql`**: The fundamental script that builds the entire environment. It includes:
-    * Table definitions for `Branches`, `Customers`, `Accounts`, `Transactions`, `Loans`, `Services`, etc.
-    * Enforcement of **Referential Integrity** using Primary/Foreign Keys and specific `ON DELETE/UPDATE` behaviors.
-* **`Insertion codes.sql`**: A highly advanced script used for **Data Seeding**. It utilizes:
-    * **T-SQL WHILE Loops**: To dynamically generate 500+ realistic records for each table.
-    * **Randomization Logic**: To distribute data across different cities (Cairo, Dubai, London, Berlin) and countries.
-* **`Question codes.sql`**: The analytical brain of the project. It features:
-    * **Advanced Views**: Like `vw_CustomerMaster_J` and `vw_AccountPortfolio_J` for real-time reporting.
-    * **Financial Risk Detection**: Logic that flags transactions based on **Statistical Deviations** (Mean + 3x Standard Deviation) or when a debit exceeds 80% of the account balance.
+### 2. 💻 Data Engineering (SQL Server)
+* **`Database creation.sql`**: Script for building the relational environment with 10+ tables and optimized referential integrity.
+* **`Insertion codes.sql`**: An advanced T-SQL script using **WHILE Loops** and randomization logic to generate 500+ realistic banking records.
+* **`Question codes.sql`**: Contains complex business logic, including:
+    * **Analytical Views**: Unified reporting for customer and account portfolios.
+    * **Risk Detection**: Statistical flagging of suspicious transactions using Standard Deviation and balance-to-debit ratios.
 
-### 3. 📊 Data Visualization & BI
-* **`Dashboardd.pbix`**: The master Power BI file that connects all SQL data to interactive visuals.
-* **`image_e031b6.png`**: A preview of the analytical dashboard, highlighting key performance indicators (KPIs) like liquidity and credit score distribution.
+### 3. 🧪 Data Science & Machine Learning (The New Pipeline)
+* **`EDA and Data cleaning.ipynb`**: A comprehensive Jupyter Notebook that performs:
+    * **Data Quality Assessment**: Identifying missing values, outliers, and inconsistencies.
+    * **Exploratory Data Analysis (EDA)**: Visualizing distributions and correlations using Seaborn and Matplotlib.
+    * **Predictive Modeling**: A Logistic Regression model implemented to predict loan status with **~97% Test Accuracy**.
+* **`Data before EDA.xlsx`**: The raw, unprocessed dataset containing real-world noise and inconsistencies.
+* **`Data after EDA.xlsx`**: The refined, cleaned dataset ready for modeling and professional reporting.
+
+### 4. 📊 Business Intelligence
+* **`Dashboardd.pbix`**: An interactive Power BI dashboard providing executive-level insights into liquidity, credit distribution, and branch performance.
+* **`image_e031b6.png`**: A preview of the analytical dashboard.
 
 ## 🛠️ Key Technical Competencies
-* **Architecture:** Relational Modeling & Database Normalization.
-* **Data Engineering:** T-SQL Scripting, Loops, Variables, and Logic-based Data Population.
-* **Advanced Analytics:** Using Statistical functions (STDEV, AVG) for anomaly detection in financial data.
-* **Data Storytelling:** Building end-to-end dashboards for executive decision-making.
+* **SQL:** Advanced T-SQL Scripting, Dynamic Data Population, and Statistical Querying.
+* **Python:** Data Wrangling (Pandas/NumPy), Visualization (Seaborn), and Machine Learning (Scikit-Learn).
+* **BI:** End-to-end Power BI dashboard development.
+* **Domain Knowledge:** Financial Risk Assessment and Customer Segmentation.
 
 ---
-**Connect with me on [LinkedIn](YOUR_LINKEDIN_URL_HERE) to discuss Data Engineering & Analytics!**
+**Connect with me on [LinkedIn](YOUR_LINKEDIN_URL_HERE) to discuss Data Science & Analytics!**
