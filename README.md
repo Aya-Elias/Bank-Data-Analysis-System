@@ -1,30 +1,34 @@
-# 🏦 Digilians Bank: Integrated Database & Analytics System
+# 🏦 Digilians Bank: Full-Cycle Data Management & Financial Intelligence
 
 ## 📌 Project Overview
-This project presents a complete banking management and analytics solution. It covers everything from architectural design and relational modeling to complex data engineering and interactive business intelligence.
+This project is a comprehensive simulation of a banking data ecosystem. It demonstrates proficiency in **Database Design (ERD)**, **Complex Data Engineering (T-SQL)**, and **Business Intelligence (Power BI)**. The system manages everything from branch operations and employee roles to automated transaction monitoring and customer risk assessment.
 
-## 📁 Repository Files & Descriptions
+## 📁 Detailed File Breakdown
 
-### 1. 🏗️ Database Architecture & Design
-* **`ERD.jpg`**: The Entity Relationship Diagram that visualizes the logical structure of the bank's data, including relationships between customers, accounts, branches, and transactions.
-* **`Schema.png`**: A detailed technical view of the database schema, showcasing table structures, data types, and primary/foreign key constraints.
+### 1. 🏗️ Data Architecture & Design
+* **`ERD.jpg`**: A visual representation of the database's Entity Relationship Diagram, showing the 10+ core entities and their relational constraints.
+* **`Schema.png`**: The physical data model showcasing table structures, data types, and the relational mapping between accounts, customers, and branches.
 
-### 2. 💻 SQL Development (T-SQL)
-* **`Database creation.sql`**: The core DDL script that builds the entire database environment. It defines 10+ relational tables with optimized constraints to ensure data integrity.
-* **`Insertion codes.sql`**: A sophisticated data engineering script that uses T-SQL loops and logic to seed the database with over 500+ realistic records, simulating a real-world banking history.
-* **`Question codes.sql`**: The analytical heart of the project. It contains:
-    * **Analytical Views**: Unified views for customer portfolios and branch performance.
-    * **Risk Logic**: Queries designed to detect suspicious transactions (e.g., transactions exceeding 80% of account balance or deviating significantly from the mean).
+### 2. 💻 Database Engineering (SQL Server)
+* **`Database creation.sql`**: The fundamental script that builds the entire environment. It includes:
+    * Table definitions for `Branches`, `Customers`, `Accounts`, `Transactions`, `Loans`, `Services`, etc.
+    * Enforcement of **Referential Integrity** using Primary/Foreign Keys and specific `ON DELETE/UPDATE` behaviors.
+* **`Insertion codes.sql`**: A highly advanced script used for **Data Seeding**. It utilizes:
+    * **T-SQL WHILE Loops**: To dynamically generate 500+ realistic records for each table.
+    * **Randomization Logic**: To distribute data across different cities (Cairo, Dubai, London, Berlin) and countries.
+* **`Question codes.sql`**: The analytical brain of the project. It features:
+    * **Advanced Views**: Like `vw_CustomerMaster_J` and `vw_AccountPortfolio_J` for real-time reporting.
+    * **Financial Risk Detection**: Logic that flags transactions based on **Statistical Deviations** (Mean + 3x Standard Deviation) or when a debit exceeds 80% of the account balance.
 
-### 3. 📊 Data Visualization
-* **`Dashboardd.pbix`**: An interactive Power BI dashboard connected directly to the SQL database. It tracks key metrics like liquidity, customer credit scores, and transaction volumes.
-* **`image_e031b6.png`**: A visual preview/screenshot of the Power BI dashboard for quick reference.
+### 3. 📊 Data Visualization & BI
+* **`Dashboardd.pbix`**: The master Power BI file that connects all SQL data to interactive visuals.
+* **`image_e031b6.png`**: A preview of the analytical dashboard, highlighting key performance indicators (KPIs) like liquidity and credit score distribution.
 
-## 🛠️ Key Technical Skills Demonstrated
-* **Database Design:** Relational Modeling & Normalization.
-* **Advanced SQL:** Joins, Subqueries, Views, and T-SQL Scripting (Loops/Variables).
-* **Data Analytics:** Transaction monitoring and statistical flagging.
-* **Business Intelligence:** Building dynamic dashboards in Power BI.
+## 🛠️ Key Technical Competencies
+* **Architecture:** Relational Modeling & Database Normalization.
+* **Data Engineering:** T-SQL Scripting, Loops, Variables, and Logic-based Data Population.
+* **Advanced Analytics:** Using Statistical functions (STDEV, AVG) for anomaly detection in financial data.
+* **Data Storytelling:** Building end-to-end dashboards for executive decision-making.
 
 ---
-**Feel free to explore the code! Connect with me on [LinkedIn](YOUR_LINKEDIN_URL_HERE) for any discussions.**
+**Connect with me on [LinkedIn](YOUR_LINKEDIN_URL_HERE) to discuss Data Engineering & Analytics!**
